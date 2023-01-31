@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#HomeSection {
+    background-color: #2D25A0;
+}
+
+#HomeSection .container {
+    max-width: 1224px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*-----------------------------
+    Navbar Start 
+ -----------------------------*/
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.3s ease-out;
+}
+
+.nav-link:hover {
+    color: rgb(215, 212, 212);
+}
+
+
+/* For Hamburger icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+/*-----------------------------
+    Navbar End
+ -----------------------------*/
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.homeLeft {
+    margin-left: 27px;
+}
+
+button.btn-nav {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-weight: 500;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+button.btn-nav:hover,
+button.homeLeftBtn:hover {
+    background-color: #3DBAFD;
+    transition: all 0.5s ease-in-out;
+}
+
+button.homeLeftBtn,
+button.highLeftBtn {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-weight: 500;
+    padding: 10px 24px;
+    margin-top: 27px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn-nav img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.headingHome {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 77px;
+}
+
+.homeRight img {
+    width: 560px;
+}
+
+.homeRight img:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1);
+    transition: all 0.7s ease-in-out;
+}
+
+#MainSection {
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.CardMain {
+    width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-bottom: 57px;
+}
+
+.cardImage {
+    width: 280px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.card img {
+    width: 280px;
+    margin-top: 10px;
+}
+
+.cardDesp {
+    width: 272px;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 27px;
+}
+
+.cardDesp h2 {
+    color: #18191F;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cardDesp p {
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+.highlights {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 57px;
+    margin-bottom: 57px;
+}
+
+.highLeft {
+    width: 500px;
+}
+
+.highLeft h2 {
+    font-size: 48px;
+}
+
+.highRight img {
+    width: 550px;
+}
+
+.contactMain {
+    width: 1140px;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 157px;
+    padding: 27px;
+    background-color: #494581;
+    border-radius: 17px;
+    box-shadow: inset 0 0 10px #ccc;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.input {
+    width: 500px;
+    display: grid;
+}
+
+.contactMain h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 57px;
+    line-height: 17px;
+}
+
+input {
+    outline: none;
+    border: 2px solid #ccc;
+    height: 27px;
+    padding: 10px;
+    margin-bottom: 27px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 10px 0px #000;
+}
+
+.contactComment {
+    display: grid;
+    margin-top: -27px;
+}
+
+textarea {
+    padding: 10px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 7px 7px 10px 0px #000;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+button.contactBtn {
+    width: 95%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 7px;
+    margin-left: 31px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    box-shadow: 7px 7px 10px 0px #000;
+}
+
+footer {
+    width: 500px;
+    margin: auto;
+    margin-top: 57px;
+}
+
+footer .logo {
+    width: 480px;
+    margin: auto;
+}
+
+footer .logo img {
+    width: 480px;
+}
+
+.icons {
+    width: 480px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.icons img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.footerDesp {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+
+
+/*---------------------------------------
+    Media Query Start 
+ ---------------------------------------*/
+
+@media (max-width: 575.98px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+
+    .headingHome {
+        font-size: 35px;
+        line-height: 80px;
+    }
+
+    button.homeLeftBtn,
+    button.highLeftBtn {
+        width: 57%;
+    }
+
+    .home,
+    .highlights,
+    .contact {
+        flex-direction: column;
+    }
+
+    .highlights {
+        width: 100%;
+    }
+
+    .homeLeft {
+        margin-bottom: 67px;
+    }
+
+    .homeRight img {
+        width: 100%;
+    }
+
+    .highLeft {
+        width: 93%;
+        margin-bottom: 57px;
+    }
+
+    .highLeft h2 {
+        font-size: 40px;
+    }
+
+    .highRight {
+        width: 93%;
+    }
+
+    .highRight img {
+        width: 100%;
+    }
+
+    input[type="password"] {
+        margin-bottom: 67px;
+    }
+
+    textarea {
+        padding: 5px;
+    }
+
+    button.contactBtn {
+        width: 100%;
+        margin-top: 28px;
+        margin-left: 0px;
+    }
+
+    .CardMain {
+        width: 94%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cardDesp {
+        width: 83%;
+    }
+
+    .cardImage {
+        width: 93%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .contactMain {
+        width: 80%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer .logo {
+        width: 100%;
+    }
+
+    .icons {
+        width: 340px;
+    }
+
+    footer .logo img {
+        width: 95%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+
+    .home,
+    .highlights,
+    .contact {
+        flex-direction: column;
+    }
+
+    .highlights {
+        width: 100%;
+    }
+
+    .homeLeft {
+        margin-left: 0px;
+        margin-bottom: 67px;
+    }
+
+    .highLeft {
+        margin-bottom: 57px;
+    }
+
+    input[type="password"] {
+        margin-bottom: 67px;
+    }
+
+    textarea {
+        padding: 5px;
+    }
+
+    button.contactBtn {
+        width: 80%;
+        margin-left: 60px;
+        margin-top: 47px;
+    }
+
+    .card {
+        width: 100%;
+        margin-right: 57px;
+    }
+
+    .cardImage {
+        width: 96%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .cardDesp {
+        width: 90%;
+    }
+
+    .CardMain {
+        width: 88%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contactMain {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .CardMain {
+        width: 98%;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .cardImage,
+    .cardImage img {
+        width: 230px;
+    }
+
+    .cardDesp {
+        width: 220px;
+    }
+
+    .homeRight img {
+        width: 100%;
+    }
+
+    .contactMain {
+        width: 90%;
+    }
+
+    .contact {
+        width: 95%;
+        margin: auto;
+    }
+
+    .input,
+    .contactComment {
+        width: 47%;
+    }
+
+    button.contactBtn {
+        width: 70%;
+        margin-left: 127px;
+    }
+
+    .highlights {
+        width: 90%;
+    }
+
+    .highRight {
+        margin-left: 24px;
+    }
+
+    .highRight img {
+        width: 100%;
+        height: 57vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200.98px) {
+    .contactMain {
+        width: 93%;
+    }
+
+    .CardMain {
+        width: 93%;
+    }
+
+    .input,
+    .contactComment {
+        width: 47%;
+    }
+
+    button.contactBtn {
+        width: 70%;
+        margin-left: 127px;
+    }
+
+    .highlights {
+        width: 90%;
+    }
+
+    .highRight {
+        margin-left: 24px;
+    }
+}
